@@ -1,0 +1,615 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cocoa Cubs — Healthy Date-Sweetened Chocolates for Kids</title>
+<meta name="description" content="Budget-friendly chocolate for kids, sweetened with real Medjool dates. Zero refined sugar, tooth-friendly, no palm oil, mom-approved." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a class="logo" href="#home">
+      <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="#3E2415"/>
+        <ellipse cx="20" cy="20" rx="9" ry="13" fill="#8A5A33"/>
+        <path d="M20 7 C15 14 15 26 20 33 C25 26 25 14 20 7 Z" fill="#3E2415"/>
+      </svg>
+      <span>Cocoa<em>Cubs</em></span>
+    </a>
+    <nav class="nav">
+      <a href="#shop">Chocolates</a>
+      <a href="#custom-box" class="nav-highlight">Build Your Box</a>
+      <a href="#subscription">Monthly Box</a>
+      <a href="#why">Why Moms Trust Us</a>
+      <a href="#comparison">Compare</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="cart-btn" id="cartBtn" aria-label="Open shopping cart">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <path d="M16 10a4 4 0 0 1-8 0"/>
+      </svg>
+      <span>Cart</span>
+      <span class="cart-count" id="cartCount" hidden>0</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <div class="badge-pill">Zero Refined Sugar · 100% Kid Approved</div>
+        <h1>Real Chocolate.<br/>Sweetened by <span class="highlight">dates</span>, not sugar.</h1>
+        <p class="sub">Cocoa Cubs makes delicious, pocket-friendly chocolates that kids crave and mothers feel confident saying yes to — rich in fiber, tooth-friendly, and free from palm oil or chemical sweeteners.</p>
+        <div class="hero-ctas">
+          <a href="#custom-box" class="btn btn-primary">Build Your Own Box</a>
+          <a href="#shop" class="btn btn-secondary">Shop All Flavors</a>
+        </div>
+        <div class="hero-chips">
+          <div class="chip">
+            <span class="chip-dot"></span>
+            <span><strong>0g</strong> Added Sugar</span>
+          </div>
+          <div class="chip">
+            <span class="chip-dot"></span>
+            <span><strong>4g</strong> Fiber / Bar</span>
+          </div>
+          <div class="chip">
+            <span class="chip-dot"></span>
+            <span>Pocket-friendly from <strong>₹79</strong></span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 340 320" width="100%">
+          <defs>
+            <linearGradient id="wrapGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#C67D45"/>
+              <stop offset="100%" stop-color="#8A5A33"/>
+            </linearGradient>
+            <linearGradient id="chocoGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#5C3A21"/>
+              <stop offset="100%" stop-color="#3B2314"/>
+            </linearGradient>
+            <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+              <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#3E2415" flood-opacity="0.18"/>
+            </filter>
+          </defs>
+          <ellipse cx="170" cy="285" rx="130" ry="18" fill="#EBDCCE"/>
+          <g transform="rotate(-10 170 160)" filter="url(#softShadow)">
+            <rect x="95" y="35" width="150" height="235" rx="18" fill="url(#wrapGrad)"/>
+            <rect x="110" y="50" width="120" height="110" rx="10" fill="url(#chocoGrad)"/>
+            <g stroke="#2B1A12" stroke-width="3.5" opacity="0.7">
+              <line x1="150" y1="55" x2="150" y2="155"/>
+              <line x1="190" y1="55" x2="190" y2="155"/>
+              <line x1="115" y1="85" x2="225" y2="85"/>
+              <line x1="115" y1="120" x2="225" y2="120"/>
+            </g>
+            <rect x="95" y="170" width="150" height="70" rx="14" fill="#FFF3E8"/>
+            <text x="170" y="205" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#C2452A">Cocoa Cubs</text>
+            <text x="170" y="224" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#7A4A2B">100% DATE SWEETENED</text>
+          </g>
+          <g transform="translate(60 100)" filter="url(#softShadow)">
+            <ellipse cx="0" cy="0" rx="16" ry="24" fill="#54301B" transform="rotate(-20)"/>
+            <ellipse cx="-2" cy="-3" rx="5" ry="11" fill="#7A4A2B" transform="rotate(-20)"/>
+          </g>
+          <g transform="translate(265 75)" filter="url(#softShadow)">
+            <ellipse cx="0" cy="0" rx="18" ry="27" fill="#6B4423" transform="rotate(25)"/>
+            <ellipse cx="-3" cy="-4" rx="6" ry="12" fill="#8A5A33" transform="rotate(25)"/>
+          </g>
+          <path d="M50 200 l5 10 10 5 -10 5 -5 10 -5 -10 -10 -5 10 -5 z" fill="#F5B301"/>
+          <path d="M285 185 l4 8 8 4 -8 4 -4 8 -4 -8 -8 -4 8 -4 z" fill="#FF6B35"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="trustbar">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="8 12 11 15 16 9"/></svg>
+        </div>
+        <div>
+          <strong>0g Added Sugar</strong>
+          <p>Pure Arabian Medjool Dates</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.4-9.5 9-9.5 9z"/></svg>
+        </div>
+        <div>
+          <strong>Tooth Friendly</strong>
+          <p>Won't feed cavity-causing bacteria</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><polyline points="9 12 11 14 15 10"/></svg>
+        </div>
+        <div>
+          <strong>Clean & Safe</strong>
+          <p>Zero palm oil, zero preservatives</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2C7 7 4 12 4 16a8 8 0 0 0 16 0c0-4-3-9-8-14z"/><line x1="12" y1="22" x2="12" y2="10"/></svg>
+        </div>
+        <div>
+          <strong>Budget Friendly</strong>
+          <p>From ₹79, accessible to all moms</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUILD YOUR OWN BOX (Interactive Feature) -->
+  <section class="custom-box-section section" id="custom-box">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Customizer</span>
+        <h2 class="section-title">Build Your Own Cub Box</h2>
+        <p class="section-sub">Pick your child's favorite date-sweetened flavors to build a personalized snack assortment!</p>
+      </div>
+
+      <div class="custom-box-builder">
+        <!-- Left Column: Controls & Flavor Selectors -->
+        <div class="builder-controls">
+          <!-- Step 1: Select Box Size -->
+          <div class="builder-step">
+            <div class="step-header">
+              <span class="step-num">1</span>
+              <h3>Choose Box Size</h3>
+            </div>
+            <div class="size-selector-grid">
+              <button type="button" class="size-option-card active" data-size="6" data-price="199" data-mrp="249">
+                <div class="size-badge">Popular</div>
+                <div class="size-name">6-Bar Mini Stash</div>
+                <div class="size-desc">Great for 1 child's weekly treat</div>
+                <div class="size-price-row">
+                  <span class="s-price">₹199</span>
+                  <span class="s-mrp">₹249</span>
+                </div>
+              </button>
+
+              <button type="button" class="size-option-card" data-size="12" data-price="349" data-mrp="499">
+                <div class="size-badge green">Best Value · Free Shipping</div>
+                <div class="size-name">12-Bar Family Stash</div>
+                <div class="size-desc">Ideal for siblings, lunchboxes & gifting</div>
+                <div class="size-price-row">
+                  <span class="s-price">₹349</span>
+                  <span class="s-mrp">₹499</span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Pick Flavors -->
+          <div class="builder-step">
+            <div class="step-header">
+              <span class="step-num">2</span>
+              <div>
+                <h3>Select Your Flavors</h3>
+                <p class="step-sub" id="slotsRemainingText">Fill all 6 slots to complete your box</p>
+              </div>
+            </div>
+
+            <div class="flavor-pickers-list" id="flavorPickersList">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual Box Preview & Checkout Card -->
+        <div class="builder-preview-col">
+          <div class="box-preview-card">
+            <div class="preview-header">
+              <div>
+                <h4 id="previewBoxTitle">Custom 6-Bar Stash</h4>
+                <span class="preview-subtitle" id="previewSlotCounter">0 / 6 Bars Added</span>
+              </div>
+              <button type="button" class="btn-clear" id="resetCustomBoxBtn">Clear All</button>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="box-fill-bar-wrap">
+              <div class="box-fill-bar" id="boxFillBar" style="width: 0%;"></div>
+            </div>
+
+            <!-- Visual Slot Grid -->
+            <div class="box-slots-container" id="boxSlotsContainer">
+              <!-- Rendered dynamically (6 or 12 slots) -->
+            </div>
+
+            <!-- Selected Breakdown Summary -->
+            <div class="box-summary-pills" id="boxSummaryPills">
+              <span class="empty-hint">Click + on any flavor to add bars to this box</span>
+            </div>
+
+            <!-- Bottom Price & CTA -->
+            <div class="preview-footer">
+              <div class="preview-pricing">
+                <span class="preview-price" id="customBoxPrice">₹199</span>
+                <span class="preview-mrp" id="customBoxMrp">₹249</span>
+                <span class="preview-savings" id="customBoxSavings">Save 20%</span>
+              </div>
+              <button type="button" class="btn btn-primary btn-block" id="addCustomBoxBtn" disabled>
+                Fill 6 More Bars
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Catalog -->
+  <section class="products section" id="shop">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Healthy Treats</span>
+        <h2 class="section-title">Shop Individual Bars</h2>
+        <p class="section-sub">Handcrafted small batches made with real cocoa butter, dates, and lots of love.</p>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <!-- Subscription Feature Section -->
+  <section class="subscription-section section" id="subscription">
+    <div class="container">
+      <div class="sub-card">
+        <div class="sub-content">
+          <span class="sub-tag">Save 20% + Free Delivery</span>
+          <h2>The Monthly Cub Box</h2>
+          <p>Tired of kids begging for sugary chocolates at grocery checkouts? Get a fresh, curated healthy chocolate box delivered right to your doorstep on the 1st of every month.</p>
+          <ul class="sub-benefits">
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>15 Assorted Bars</strong> (Classic Milk, Hazelnut, Dark & Mini Bites)</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Collectible Cub Activity Sticker Sheet</strong> inside every box</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Pause, skip or cancel anytime</strong> with zero hassle</span>
+            </li>
+          </ul>
+          <div class="sub-price-row">
+            <div class="sub-price-group">
+              <span class="sub-price">₹449</span>
+              <span class="sub-mrp">₹599</span>
+              <span class="sub-period">/ month</span>
+            </div>
+            <button class="btn btn-primary" id="subscribeBtn">Subscribe Now</button>
+          </div>
+        </div>
+        <div class="sub-visual">
+          <div class="box-badge">Most Popular for Families</div>
+          <svg viewBox="0 0 280 240" width="100%">
+            <rect x="30" y="50" width="220" height="160" rx="16" fill="#FFF8F0" stroke="#EBDCCE" stroke-width="2"/>
+            <rect x="30" y="50" width="220" height="40" rx="14" fill="#5C3A21"/>
+            <text x="140" y="76" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#FFF3E8">MONTHLY CUB BOX</text>
+            <g transform="translate(60 100)">
+              <rect width="36" height="75" rx="6" fill="#8A5A33"/>
+              <rect x="4" y="4" width="28" height="35" rx="4" fill="#3B2314"/>
+              <rect x="0" y="45" width="36" height="25" rx="4" fill="#FFE3D6"/>
+            </g>
+            <g transform="translate(122 92)">
+              <rect width="36" height="83" rx="6" fill="#6B4423"/>
+              <rect x="4" y="4" width="28" height="38" rx="4" fill="#3B2314"/>
+              <rect x="0" y="50" width="36" height="25" rx="4" fill="#E5F3E5"/>
+            </g>
+            <g transform="translate(184 100)">
+              <rect width="36" height="75" rx="6" fill="#C2452A"/>
+              <rect x="4" y="4" width="28" height="35" rx="4" fill="#3B2314"/>
+              <rect x="0" y="45" width="36" height="25" rx="4" fill="#FFF3D6"/>
+            </g>
+            <circle cx="215" cy="45" r="22" fill="#FF6B35"/>
+            <text x="215" y="43" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#FFF">SAVE</text>
+            <text x="215" y="55" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFF">20%</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Moms Trust Us -->
+  <section class="why section" id="why">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Science & Care</span>
+        <h2 class="section-title">Why Mothers Choose Cocoa Cubs</h2>
+        <p class="section-sub">We designed these chocolates specifically to remove parental guilt while satisfying picky kids.</p>
+      </div>
+      <div class="why-grid" id="whyGrid"></div>
+    </div>
+  </section>
+
+  <!-- Comparison Matrix -->
+  <section class="comparison-section section" id="comparison">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Clean Difference</span>
+        <h2 class="section-title">Cocoa Cubs vs Standard Supermarket Chocolates</h2>
+        <p class="section-sub">Look at the facts before you hand another sugar-packed bar to your little one.</p>
+      </div>
+      <div class="compare-card">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Nutrition Metric</th>
+                <th>Standard Candy Bar</th>
+                <th class="us">Cocoa Cubs Bar</th>
+              </tr>
+            </thead>
+            <tbody id="compareBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parent FAQ -->
+  <section class="faq section" id="faq">
+    <div class="container container-narrow">
+      <div class="section-header">
+        <span class="section-tag">Common Questions</span>
+        <h2 class="section-title">Everything Parents Want To Know</h2>
+        <p class="section-sub">Clear, honest answers about ingredients, dental health, and ordering.</p>
+      </div>
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo logo-light" href="#home">
+          <svg viewBox="0 0 40 40" width="32" height="32" aria-hidden="true">
+            <circle cx="20" cy="20" r="19" fill="#FFF3E8"/>
+            <ellipse cx="20" cy="20" rx="9" ry="13" fill="#8A5A33"/>
+            <path d="M20 7 C15 14 15 26 20 33 C25 26 25 14 20 7 Z" fill="#5C3A21"/>
+          </svg>
+          <span>Cocoa<em>Cubs</em></span>
+        </a>
+        <p class="footer-motto">Nutritious, date-sweetened chocolates for children. Guilt-free snacking, approved by mothers and loved by kids.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <a href="#custom-box">Build Your Box</a>
+        <a href="#shop">Shop Treats</a>
+        <a href="#subscription">Monthly Box</a>
+        <a href="#why">Why Moms Trust Us</a>
+        <a href="#comparison">Compare Nutrition</a>
+        <a href="#faq">Parent FAQ</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Customer Care</h4>
+        <p>Questions or bulk school party orders?</p>
+        <a href="mailto:care@cocoacubs.in" class="footer-link">care@cocoacubs.in</a>
+        <a href="https://wa.me/919999999999" class="footer-link" target="_blank" rel="noopener">WhatsApp Support: +91 99999 99999</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="fineprint">FSSAI Lic. No. 12345678901234 · 100% Vegetarian · Made in India</p>
+      <p class="fineprint">© <span id="year"></span> Cocoa Cubs Foods Pvt. Ltd. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Cart Drawer -->
+<div class="backdrop" id="backdrop"></div>
+
+<aside class="drawer" id="drawer" aria-label="Shopping cart">
+  <div class="drawer-head">
+    <div class="drawer-title">
+      <h3>Your Cub Stash</h3>
+      <span class="drawer-items-count" id="drawerItemCount">0 items</span>
+    </div>
+    <button class="icon-btn" id="closeCart" aria-label="Close cart">&times;</button>
+  </div>
+  
+  <div class="free-ship">
+    <p id="shipMsg">Free delivery on orders above ₹250</p>
+    <div class="bar"><i id="shipBar"></i></div>
+  </div>
+
+  <div class="cart-items" id="cartItems"></div>
+
+  <div class="drawer-foot" id="drawerFoot" hidden>
+    <div class="summary-rows">
+      <div class="row"><span>Subtotal</span><span id="subtotal">₹0</span></div>
+      <div class="row"><span>Delivery Charges</span><span id="deliveryFee">₹0</span></div>
+      <div class="row total"><span>Total Amount</span><span id="total">₹0</span></div>
+    </div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">
+      Proceed to Checkout (Cash on Delivery)
+    </button>
+    <p class="drawer-security-note">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Safe WhatsApp Ordering with COD
+    </p>
+  </div>
+</aside>
+
+<!-- Checkout Modal -->
+<div class="overlay" id="overlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Complete Order">
+    <button class="icon-btn modal-close" id="closeModal" aria-label="Close checkout">&times;</button>
+    
+    <div id="formView">
+      <div class="modal-head">
+        <h3>Delivery Details</h3>
+        <p class="modal-sub">Enter where you'd like your Cocoa Cubs parcel delivered.</p>
+      </div>
+      <form id="checkoutForm" novalidate>
+        <div class="form-group">
+          <label for="fName">Parent's Full Name</label>
+          <input type="text" id="fName" placeholder="e.g. Pratishtha Sharma" required />
+        </div>
+        <div class="form-group">
+          <label for="fPhone">WhatsApp Mobile Number</label>
+          <input type="tel" id="fPhone" placeholder="10-digit mobile number" maxlength="10" inputmode="numeric" required />
+          <span class="field-hint">We send order dispatch tracking via WhatsApp</span>
+        </div>
+        <div class="form-group">
+          <label for="fPincode">Pincode</label>
+          <input type="text" id="fPincode" placeholder="6-digit Indian pincode" maxlength="6" inputmode="numeric" required />
+        </div>
+        <div class="form-group">
+          <label for="fAddress">Full Delivery Address</label>
+          <textarea id="fAddress" rows="3" placeholder="House/Flat No., Building, Street, Landmark, City" required></textarea>
+        </div>
+        
+        <p class="form-error" id="formError" hidden>Please fill in all the required fields correctly.</p>
+        
+        <button type="submit" class="btn btn-primary btn-block">Review Order Summary</button>
+        <p class="fineprint center mt-8">Pay comfortably upon delivery (Cash / UPI on Delivery)</p>
+      </form>
+    </div>
+
+    <div id="doneView" hidden>
+      <div class="modal-head text-center">
+        <div class="success-icon-wrap">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#2E7D32" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3>Order Ready To Send!</h3>
+        <p class="modal-sub">Click below to send your order details via WhatsApp to our order desk.</p>
+      </div>
+
+      <div class="order-preview-card">
+        <pre id="orderPreview" class="order-preview"></pre>
+      </div>
+
+      <a id="waLink" class="btn btn-green btn-block" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.301-.15-1.78-.879-2.056-.98-.277-.101-.478-.15-.68.15-.201.3-.779.98-.955 1.18-.175.201-.351.226-.652.075-.301-.15-1.272-.469-2.423-1.496-.897-.801-1.503-1.791-1.68-2.092-.175-.3-.019-.462.132-.612.136-.135.301-.351.452-.527.15-.175.201-.3.301-.501.101-.201.05-.376-.025-.526-.075-.15-.68-1.64-.93-2.245-.244-.59-.493-.51-.68-.52l-.578-.01c-.201 0-.527.075-.803.376s-1.054 1.03-1.054 2.51 1.08 2.91 1.23 3.11c.15.201 2.124 3.245 5.147 4.551.719.311 1.28.497 1.717.636.722.23 1.378.197 1.898.12.579-.088 1.78-.727 2.03-1.43.25-.703.25-1.305.175-1.43-.075-.125-.276-.201-.577-.351z"/></svg>
+        Send Order on WhatsApp
+      </a>
+      <p class="fineprint center mt-8">Our care team will confirm dispatch details within 2 hours.</p>
+    </div>
+  </div>
+</div>
+
+<!-- AI Chatbot Widget (Cubby AI) -->
+<div class="chat-widget" id="chatWidget">
+  <!-- Chat Launcher Button -->
+  <button class="chat-launcher-btn" id="chatLauncherBtn" aria-label="Open AI Nutrition Assistant">
+    <div class="chat-badge-dot"></div>
+    <div class="chat-avatar-icon">
+      <svg viewBox="0 0 40 40" width="30" height="30" aria-hidden="true">
+        <circle cx="20" cy="20" r="18" fill="#FFF3E8"/>
+        <!-- Cub Face -->
+        <circle cx="13" cy="11" r="5.5" fill="#8A5A33"/>
+        <circle cx="27" cy="11" r="5.5" fill="#8A5A33"/>
+        <circle cx="13" cy="11" r="3" fill="#FFE3D6"/>
+        <circle cx="27" cy="11" r="3" fill="#FFE3D6"/>
+        <ellipse cx="20" cy="22" rx="14" ry="12" fill="#8A5A33"/>
+        <ellipse cx="20" cy="24" rx="8" ry="6" fill="#FFE3D6"/>
+        <circle cx="15" cy="19" r="2.2" fill="#2E1A0E"/>
+        <circle cx="25" cy="19" r="2.2" fill="#2E1A0E"/>
+        <ellipse cx="20" cy="22" rx="3.2" ry="2.2" fill="#3B2314"/>
+        <path d="M18 25 Q20 27 22 25" stroke="#3B2314" stroke-width="1.2" fill="none"/>
+      </svg>
+    </div>
+    <span class="chat-launcher-label">Ask Cubby AI</span>
+  </button>
+
+  <!-- Chat Window -->
+  <div class="chat-window" id="chatWindow" role="region" aria-label="Cubby AI Assistant Chat" hidden>
+    <!-- Chat Header -->
+    <div class="chat-header">
+      <div class="chat-bot-profile">
+        <div class="chat-bot-avatar">
+          <svg viewBox="0 0 40 40" width="28" height="28" aria-hidden="true">
+            <circle cx="20" cy="20" r="19" fill="#FFF3E8"/>
+            <circle cx="13" cy="11" r="5.5" fill="#8A5A33"/>
+            <circle cx="27" cy="11" r="5.5" fill="#8A5A33"/>
+            <circle cx="13" cy="11" r="3" fill="#FFE3D6"/>
+            <circle cx="27" cy="11" r="3" fill="#FFE3D6"/>
+            <ellipse cx="20" cy="22" rx="14" ry="12" fill="#8A5A33"/>
+            <ellipse cx="20" cy="24" rx="8" ry="6" fill="#FFE3D6"/>
+            <circle cx="15" cy="19" r="2.2" fill="#2E1A0E"/>
+            <circle cx="25" cy="19" r="2.2" fill="#2E1A0E"/>
+            <ellipse cx="20" cy="22" rx="3.2" ry="2.2" fill="#3B2314"/>
+          </svg>
+        </div>
+        <div>
+          <h4>Cubby AI Guide</h4>
+          <span class="chat-status"><span class="status-indicator"></span> Mom & Nutrition Guide</span>
+        </div>
+      </div>
+      <div class="chat-header-actions">
+        <button class="chat-icon-btn" id="chatSettingsBtn" title="Gemini AI Key Settings" aria-label="Chatbot Settings">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </button>
+        <button class="chat-icon-btn" id="closeChatBtn" aria-label="Close Chat">&times;</button>
+      </div>
+    </div>
+
+    <!-- API Key Settings Banner (Collapsible) -->
+    <div class="chat-settings-panel" id="chatSettingsPanel" hidden>
+      <div class="settings-title">
+        <span>Gemini AI Key (Optional)</span>
+        <button type="button" class="btn-text" id="closeSettingsPanel">Close</button>
+      </div>
+      <p class="settings-desc">By default, Cubby uses built-in smart nutrition responses. You can also paste your Google Gemini API Key for live multimodal reasoning.</p>
+      <div class="settings-input-row">
+        <input type="password" id="geminiApiKeyInput" placeholder="AIzaSy..." />
+        <button type="button" class="btn btn-primary btn-sm" id="saveApiKeyBtn">Save</button>
+      </div>
+    </div>
+
+    <!-- Chat Messages Container -->
+    <div class="chat-messages" id="chatMessages">
+      <!-- Default Welcome Message -->
+      <div class="chat-msg bot-msg">
+        <div class="msg-bubble">
+          <p>Hi there! 🐻 I'm <strong>Cubby</strong>, your Cocoa Cubs nutrition guide. How can I help you and your little ones today?</p>
+        </div>
+        <span class="msg-time">Just now</span>
+      </div>
+    </div>
+
+    <!-- Quick Prompt Suggestions -->
+    <div class="chat-quick-prompts" id="chatQuickPrompts">
+      <button type="button" class="prompt-chip" data-prompt="Is it really safe for teeth and cavities?">🦷 Safe for teeth?</button>
+      <button type="button" class="prompt-chip" data-prompt="Why are dates better than regular sugar?">🌴 Dates vs Sugar</button>
+      <button type="button" class="prompt-chip" data-prompt="Help me pick flavors for a custom box">📦 Box Recommendations</button>
+      <button type="button" class="prompt-chip" data-prompt="Does this contain palm oil, artificial colors or allergens?">🛡️ Clean Ingredients</button>
+    </div>
+
+    <!-- Chat Input Area -->
+    <form class="chat-input-form" id="chatInputForm">
+      <input type="text" id="chatTextInput" placeholder="Ask about ingredients, kid ages, custom boxes..." autocomplete="off" required />
+      <button type="submit" class="chat-send-btn" id="chatSendBtn" aria-label="Send message">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Toast Notification -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
